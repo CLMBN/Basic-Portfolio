@@ -1,26 +1,66 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<link rel="stylesheet" type="text/css" href="assets\css\style.css">
-	<title>Juan Ossa's Portfolio</title>
+	<title>Juan Ossa's Bio Page</title>
+	<link rel="stylesheet" type="text/css" href="assets\css\style.css">
 </head>
+
 <body>
-	<header>
-		<div>
-			<div class="container">
-				<div class="navbar-header">
-					<a id="brand" href="index.html">Juan Ossa</a>
-				</div>
-				<nav>
-					<ul id="myNavbar">
-						<li><a href="index.html">About</li>
-						<li><a href="portfolio.html">Portfolio</li>
-						<li><a href="contact.html">Contact</li>
-					</ul>
-				</nav>
-			</div>
-		</div>	
-		
-	</header>
+	<div class="top-container">
+		<header class="nav">
+			<ul>
+				<li id="name"><strong>Juan Ossa</strong></li>
+				<li id="nav-links"><a href="contact.html">Contact</a></li>
+				<li id="nav-links"><a href="portfolio.html">Portfolio</a></li>
+				<li id="nav-links"><a href="index.html">About</a></li>
+			</ul>
+		</header>
+	</div>
+<br>
+	<div class="container">
+		<SECTION id="main-bio">
+			<h2>Something about me...</h2>
+
+			<img id="bio-image" src="https://avatars0.githubusercontent.com/u/19864541?v=3&s=460" alt="Profile-Picture">
+
+			<p>Hi, my name is Juan- an aspiring web developer. I currently work as a Product / Project Manager for a multi-national wealth management company. I am looking to expand my knowledge in web development in order to become a more effective project manager and also allow me the oportunity to bring more of my ideas to life working closer to the development teams.</p>
+
+			<p>I am an avid motorcycle rider, and father of 2 beautiful girls. My passions include working hard, servicing my clients, traveling, and enjoying time with my family.
+			</p>
+
+		</SECTION>
+	</div>
+
+	<div>
+		<section id="contact-info">
+			<h2>Connect with Me</h2>
+				<ul class="contact-icons">
+					<li>
+						<a href="mailto:juanmiguel.ossa@gmail.com" target="_top">
+							<img src="assets\images\email.png" alt="email" style="width:42px;height:42px;border:0;">
+						</a>
+					</li>
+					<li>
+						<a href="https://github.com/CLMBN" target="_target">
+							<img src="assets\images\github.png" alt="github" style="width:42px;height:42px;border:0;">
+						</a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/in/juanmiguelossa" target="_target">
+							<img src="assets\images\linkedin.png" alt="Linkedin" style="width:42px;height:42px;border:0;">
+						</a>
+					</li>
+					<li>
+						<a href="http://stackoverflow.com/users/7305063/juan-ossa" target="_target">
+							<img src="assets\images\stack.png" alt="stackoverflow" style="width:42px;height:42px;border:0;">
+						</a>
+					</li>
+				</ul>
+		</section>
+	</div>
+	<footer id="footer">
+		<div>&copy; Copyright 2017 Juan Ossa</div>
+	</footer>
 </body>
 </html>

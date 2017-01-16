@@ -1,0 +1,25 @@
+.container {
+
+}
+
+#myNavbar {
+	float: left;
+}
+.brand {
+	float: left;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	float: left;
+}
+
+li {
+	display: inline;
+}
+
+li a {
+
+}
