@@ -6,18 +6,24 @@
 	body {
 		margin: 0;
 		padding: 0;
-		width: 200 auto;
-		font-family: Georgia, Times, "Times New Roman", serif
+		font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+		color: #777777;
+		width: 960px;
+		background-color: #ffffff;
+		
 		}
 
 	.top-container {
-		position: fixed;
+		position: relative;
 		top: 0;
-		border-bottom: solid grey;
+		border-bottom: #cccccc;
 		width: 100%;
 		height: 70px;
 		padding: 0px 50px 0 50px;
 		margin: 0px;
+		background-color: #ffffff;
+		font-family: Georgia, Times, "Times New Roman", serif;
+		color: #ffffff;
 	}
 	#name {
 		position: absolute;
@@ -38,14 +44,76 @@
 		list-style-type: none;
 		overflow: hidden;
 		display: block;
-		color: grey;
+		color: #777777;
 		text-align: center;
 		padding: 14px 16px;
 		text-decoration: none;
-
+	}
+	
+	a {
+		font-family: Georgia, Times, "Times New Roman", serif;
+	}
+	.container {
+		background-color: #4aaaa5;
+		padding-top: 0px;
+		padding-bottom: 10px;
+		width: 920px auto;
 	}
 
-	.container {
-		margin-top: 100px;
+	.main-body {
+		background-image: url("../images/dark_embroidery.png");
+		padding-top: 20px;
+		padding-bottom: 20px;
+		width: 100% auto;
+		overflow: auto;
+	}
+
+	.about {
+		float: left;
+		padding:0px 20px 0 20px;
+		border: #dddddd;
+		width: 650px;
+		margin: 10px;
+		background-color: white;
+	}
+
+	#main-bio {
+		border-bottom: solid #cccccc;
+		padding-bottom: 10px;
+		color: #4aaaa5;
+	}
+
+	#bio-image {
+		float: left;
+		width: 150px;
+		height: 150px;
+		border-radius: 100%;
+		margin-right: 10px;
+	}
+	
+	.contact-info {
+		float: left;
+		width: 270px;
+		margin: 10px;
+		border: #dddddd;
+		background-color: #ffffff;
+		color: #4aaaa5;
+	}
+
+	.contact-icons {
+		list-style-type: none;
+	}
+
+	.icon {
+		float: left;
+	}
+
+	#footer {
 		clear: both;
+		background-color: #666666;
+		text-align: center;
+		position: relative;
+		bottom: 0px;
+		width: 100%;
+		padding: 20px;
 	}
