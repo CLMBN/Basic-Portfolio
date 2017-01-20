@@ -2,7 +2,8 @@
 <html>
 
 <head>
-	<title>Juan Ossa's Bio Page</title>
+	<title>Juan Ossa's Contact Page</title>
+	<!-- <link rel="stylesheet" type="text/css" href="assets\css\reset.css"> -->
 	<link rel="stylesheet" type="text/css" href="assets\css\style.css">
 </head>
 
@@ -19,20 +20,47 @@
 		</header>
 	</div>	
 
-	<div id="container">
-		<div id="main-background">
-			<div class="main-body">
+	<div id="main-background">
+		<div class="main-body">
 			<section class="about">
 
-				<h1 id="main-bio">Contact</h1>
+				<h1 id="main-contact">Contact</h1>
 
-				
+				 <div class="contact-form">
+				    <form action="#">
+				      			        
+				        <li>
+				          <p class="left">
+				            <label for="name">Name</label><br>
+				            <input type="text" name="name" placeholder="John Smith" cols="80" />
+				          </p>
+				        </li>
+				        
+				        <li>
+				          <p>
+				            <label for="email">Email</label><br>
+				            <input type="email" name="email" placeholder="example@gmail.com" />
+				          </p>
+				        </li>        
+				        
+				        <li>
+				          <label for="message">Message</label><br>
+				          <textarea cols="80" rows="15" name="message"></textarea>
+				        </li>
+				        
+				        <li>
+				          <input class="btn btn-submit" type="submit" value="Submit" />
+				        </li>
+				        
+				      
+				    </form>  
+				  </div>
 
 			</section>
 			<section class="contact-info">
 				<h3 id="contact-me">Connect with Me</h3>
 				<div class="contact-icons">
-					<li class="icon">
+						<li class="icon">
 						<a href="mailto:juanmiguel.ossa@gmail.com" target="_top">
 							<img src="assets\images\email.png" alt="email" style="width:42px;height:42px;border:0;">
 						</a>
@@ -54,9 +82,9 @@
 					</li>
 				</div>
 			</section>
-			</div>
 		</div>
 	</div>
+
 	<footer id="footer">
 		<div>&copy; Copyright 2017 Juan Ossa</div>
 	</footer>

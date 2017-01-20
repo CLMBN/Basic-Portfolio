@@ -3,10 +3,9 @@
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }	
-	/* html {
-		margin: 0;
-		padding: 0;
-	} */
+	html { 
+ 		background: url(../images/dark_embroidery.png); 
+	}
 	body {
 		top: 0;
 		margin: 0;
@@ -43,9 +42,6 @@
 		padding: 20px 20px;
 	}
 
-	.nav {
-		text-decoration: none;
-	}
 	#nav-links {
 		position: relative;
 		top: 0;
@@ -55,24 +51,28 @@
 		display: block;
 		color: #777777;
 		text-align: center;
-		padding: 18px 0 14px 20px;	
+		padding: 18px 10px 20px;
+		background-color: white;	
 	}
-	
+
+	#nav-links:hover {
+		background-color: #4aaaa5;
+		color: white;
+	}
+
 	a {
 		font-family: Georgia, Times, "Times New Roman", serif;
-	}
-	#container {
-		background-color: #4aaaa5;
-		padding-top: 0px;
-		padding-bottom: 10px;
-		width: 100%;
+		text-decoration: none;
+		color: #777777;
+
 	}
 
 	#main-background {
 		background-image: url("../images/dark_embroidery.png");
 		padding-top: 20px;
-		padding-bottom: 20px;
+		padding-bottom: 50px;
 		width: 100%;
+		
 	}
 
 	.main-body {
@@ -116,10 +116,11 @@
 	#contact-me {
 		border-bottom: solid #cccccc;
 		padding-bottom: 15px;
+		margin-left: 5px;
 	}
 	.contact-icons {
 		list-style-type: none;
-		margin: 0;
+		margin-left: 5px;
 	}
 
 	.icon {
@@ -133,8 +134,62 @@
 		background-color: #666666;
 		color: 	white;
 		text-align: center;
-		position: relative;
+		position: fixed;
 		bottom: 0px;
 		width: 100%;
 		padding: 20px;
+		border-top: solid #4aaaa5 10px;
 	}
+
+	/* Portfolio specific */
+
+	.main-portfolio {
+	}
+	.portfolio-image {
+		float: left;
+		height: 190px;
+		width: 250px;
+		position: relative;
+		padding: 0;
+		margin: 20px;
+	}
+
+	.portfolio-image img {
+		display: block;
+		max-width: 100%;
+		height: auto;
+	}
+
+	.caption-text {
+		opacity: 0;
+		position: absolute;
+		width: 100%;
+		color: white;
+		left: 0;
+		bottom: 0;
+		padding: 1em;
+		font-weight: 700;
+		z-index: 2;
+		-webkit-transition: opacity .3s ease-in-out;
+		transition: opacity .3s ease-in-out;
+		background-color: #4aaaa5;
+	}
+
+	.portfolio-image:hover .caption-text {
+		opacity: 1;
+	}
+	/* Contact */
+	
+	.contact-form {
+		list-style: none;
+		padding-bottom: 20px;
+	}
+
+	.btn {
+		display: inline-block;
+		padding: 0.74em 1.5em;
+		margin: 1.5em 0 0;
+		color: white;
+		border-width: 0 0 0 0;
+		background-color: #4aaaa5;
+		}
